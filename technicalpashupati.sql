@@ -233,7 +233,7 @@ CREATE TABLE `manipulators` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `identity_code` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `image` varchar(500) NOT NULL,
   `last_update` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

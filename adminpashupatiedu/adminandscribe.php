@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $scribeName = $_POST['scribeName'];
         $scribeIdentity = $_POST['scribeIdentity'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         date_default_timezone_set('Asia/Kathmandu');
         $currentDate = date("d/m/Y");
         $currentTime = date("h:i A");
